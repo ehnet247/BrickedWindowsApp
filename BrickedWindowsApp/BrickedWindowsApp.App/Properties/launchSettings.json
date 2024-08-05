@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BrickedWindowsApp.App (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BrickedWindowsApp.App (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
