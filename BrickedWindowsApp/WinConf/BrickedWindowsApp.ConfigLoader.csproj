@@ -2,16 +2,11 @@
   <PropertyGroup>
     <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
-    <RootNamespace>BrickedWindowsApp.Windows</RootNamespace>
+    <RootNamespace>WinConf</RootNamespace>
     <RuntimeIdentifiers Condition="$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)')) &gt;= 8">win-x86;win-x64;win-arm64</RuntimeIdentifiers>
     <RuntimeIdentifiers Condition="$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)')) &lt; 8">win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
-    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove="BrickedNavigationWindow.xaml" />
-    <None Remove="BrickedSimpleWindow.xaml" />
-  </ItemGroup>
 
   <ItemGroup>
       <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240311000" />
@@ -19,14 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="BrickedNavigationWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="BrickedSimpleWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <ProjectReference Include="..\BrickedWindowsApp.Windows\BrickedWindowsApp.Windows.csproj" />
   </ItemGroup>
 </Project>

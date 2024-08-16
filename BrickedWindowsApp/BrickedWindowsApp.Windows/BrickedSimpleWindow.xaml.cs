@@ -18,9 +18,9 @@ using Windows.Foundation.Collections;
 
 namespace BrickedWindowsApp.Windows
 {
-    public sealed partial class BrickedWindow : Window
+    public sealed partial class BrickedSimpleWindow : Window
     {
-        public BrickedWindow()
+        public BrickedSimpleWindow()
         {
             this.InitializeComponent();
         }

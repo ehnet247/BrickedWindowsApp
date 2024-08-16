@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickedWindowsApp.App", "BrickedWindowsApp.App\BrickedWindowsApp.App.csproj", "{4B3C27C0-BD55-4D3A-A7CF-C7668844485D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickedWindowsApp.App", "BrickedWindowsApp.App\BrickedWindowsApp.App.csproj", "{4B3C27C0-BD55-4D3A-A7CF-C7668844485D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickedWindowsApp.Windows", "BrickedWindowsApp.Windows\BrickedWindowsApp.Windows.csproj", "{02506B33-F562-40A4-A9AF-727A8668034A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickedWindowsApp.Windows", "BrickedWindowsApp.Windows\BrickedWindowsApp.Windows.csproj", "{02506B33-F562-40A4-A9AF-727A8668034A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickedWindowsApp.ConfigLoader", "WinConf\BrickedWindowsApp.ConfigLoader.csproj", "{B25A54A5-084B-46EE-8A1E-88FDE02718FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{02506B33-F562-40A4-A9AF-727A8668034A} = {02506B33-F562-40A4-A9AF-727A8668034A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +64,22 @@ Global
 		{02506B33-F562-40A4-A9AF-727A8668034A}.Release|x64.Build.0 = Release|Any CPU
 		{02506B33-F562-40A4-A9AF-727A8668034A}.Release|x86.ActiveCfg = Release|Any CPU
 		{02506B33-F562-40A4-A9AF-727A8668034A}.Release|x86.Build.0 = Release|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Debug|x64.Build.0 = Debug|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Debug|x86.Build.0 = Debug|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Release|ARM64.Build.0 = Release|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Release|x64.ActiveCfg = Release|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Release|x64.Build.0 = Release|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Release|x86.ActiveCfg = Release|Any CPU
+		{B25A54A5-084B-46EE-8A1E-88FDE02718FE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

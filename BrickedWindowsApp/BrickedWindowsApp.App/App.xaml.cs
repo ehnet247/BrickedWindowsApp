@@ -17,6 +17,9 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using BrickedWindowsApp.Windows;
 using Microsoft.Extensions.DependencyInjection;
+using BrickedWindowsApp.WinConf;
+using System.Diagnostics;
+using System.Reflection;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -45,12 +48,30 @@ namespace BrickedWindowsApp.App
         {
             ServiceCollection services = new ServiceCollection();
             services.AddScoped<BrickedNavigationWindow>();
+            services.AddScoped<BrickedSimpleWindow>();
+            services.AddScoped<BrickedWindowsConfig>();
 
             ServiceProvider serviceProvider = services.BuildServiceProvider();
-            m_window = serviceProvider.GetService<BrickedNavigationWindow>();
-            m_window.Activate();
+            m_config = serviceProvider.GetService<BrickedWindowsConfig>();
+            string directory = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            directory += "\\BrickedWindows";
+            string configFilePath = directory+"\\BrickedWindows.conf";
+            Loader loader = new Loader();
+            //loader.CreateFile(configFilePath);
+            
+            
+            m_config.ReadConfig(configFilePath);
+            if (m_config.WindowDescription != null)
+            {
+                Type windowType = m_config.WindowDescription.WindowType;
+                m_window = (Window)serviceProvider.GetService(windowType);
+
+                m_window.Title = m_config.AppName;
+                m_window.Activate();
+            }
         }
 
         private Window m_window;
+        private BrickedWindowsConfig m_config;
     }
 }
