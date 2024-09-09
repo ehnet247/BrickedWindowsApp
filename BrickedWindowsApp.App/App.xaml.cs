@@ -21,6 +21,8 @@ using BrickedWindowsApp.WinConf;
 using System.Diagnostics;
 using System.Reflection;
 using Microsoft.Identity.Client;
+using BrickedWindowsApp.App.LoginForm;
+using System.Threading;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -55,6 +57,7 @@ namespace BrickedWindowsApp.App
             services.AddScoped<BrickedNavigationWindow>();
             services.AddScoped<BrickedSimpleWindow>();
             services.AddSingleton<BrickedWindowsConfig>();
+            services.AddSingleton<LoginView>();
 
             ServiceProvider serviceProvider = services.BuildServiceProvider();
             m_config = serviceProvider.GetService<BrickedWindowsConfig>();
@@ -66,13 +69,21 @@ namespace BrickedWindowsApp.App
             var newUserAuth = serviceProvider.GetService<UserAuth>();
 
             m_config.ReadConfig(configFilePath);
-            if (m_config.WindowDescription != null)
+            if (m_config.AuthenticateUser)
             {
-                Type windowType = m_config.WindowDescription.WindowType;
-                m_window = (Window)serviceProvider.GetService(windowType);
+                var loginView = (Window)serviceProvider.GetService<LoginView>();
+                loginView.Activate();
+            }
+            if (Thread.CurrentPrincipal != null)
+            {
+                if (m_config.WindowDescription != null)
+                {
+                    Type windowType = m_config.WindowDescription.WindowType;
+                    m_window = (Window)serviceProvider.GetService(windowType);
 
-                m_window.Title = m_config.AppName;
-                m_window.Activate();
+                    m_window.Title = m_config.AppName;
+                    m_window.Activate();
+                }
             }
         }
 

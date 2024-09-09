@@ -53,4 +53,17 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
+  <ItemGroup>
+    <CustomAdditionalCompileInputs Remove="LoginForm\LoginView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\back-image.jpg" />
+    <None Remove="LoginForm\LoginView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Remove="LoginForm\LoginView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Images\back-image.jpg" />
+  </ItemGroup>
 </Project>

@@ -396,3 +396,36 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main.zip
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/LICENSE
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/MVVMLoginDb.sql
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/README.md
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm.sln
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/App.config
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/App.xaml
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/App.xaml.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/CustomControls/BindablePasswordBox.xaml
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/CustomControls/BindablePasswordBox.xaml.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Images/back-image.jpg
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Images/key-icon.png
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Images/logo.png
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Images/user-icon.png
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Models/IUserRepository.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Models/UserAccountModel.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Models/UserModel.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Properties/AssemblyInfo.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Properties/Resources.Designer.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Properties/Resources.resx
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Properties/Settings.Designer.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Properties/Settings.settings
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Repositories/RepositoryBase.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Repositories/UserRepository.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/ViewModels/LoginViewModel.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/ViewModels/MainViewModel.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/ViewModels/ViewModelBase.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/ViewModels/ViewModelCommand.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Views/LoginView.xaml
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Views/LoginView.xaml.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Views/MainView.xaml
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/Views/MainView.xaml.cs
+Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main/WPF-LoginForm/WPF-LoginForm.csproj

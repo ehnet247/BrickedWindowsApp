@@ -18,6 +18,7 @@ namespace BrickedWindowsApp.WinConf
     public class BrickedWindowsConfig
     {
         public string AppName { get; set; }
+        public bool AuthenticateUser { get; set; }
         public BrickedWindowDescription WindowDescription { get; set; }
 
         public BrickedWindowsConfig(string appName)

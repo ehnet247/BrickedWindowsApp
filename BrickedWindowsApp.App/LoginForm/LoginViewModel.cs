@@ -15,7 +15,7 @@ namespace BrickedWindowsApp.App.LoginForm
     public class LoginViewModel : ObservableRecipient
     {
         // https://www.youtube.com/watch?v=FGqj4q09NtA
-        // 11 min50
+        // 12 min50
         private string username;
         private SecureString password;
         private string errorMessage;
